@@ -1,11 +1,21 @@
 # `xpb` (Extended Pasteboard)
 
-
 Extended access for the Mac OS pasteboards (clipboards) for command-line utilities.
+
+Pull requests gladly accepted! Swift is not my first language.
+
+## Installing
+
+For the moment, this is self-serve: clone the repo and run `swift build -c release`.
+
+Watch this space, though; I might have some releases built at some point.
+
+
+## Usage
 
 Example uses follow:
 
-## `xpb copy`: writing to a pasteboard
+### `xpb copy`: writing to a pasteboard
 
 Write from stdin, specifying the type of data (as with `pbcopy`):
 
@@ -37,7 +47,7 @@ a web browser):
 ```
 
 
-## `xpb list`: listing pasteboard contents
+### `xpb list`: listing pasteboard contents
 
 List the contents of the general pasteboard after copying plaintext:
 ```
@@ -66,7 +76,7 @@ List the contents of the 'find' pasteboard:
 Pasteboard 'Apple CFPasteboard find' has 6 bytes of 'string' data
 ```
 
-## `xpb paste`: printing pasteboard contents
+### `xpb paste`: printing pasteboard contents
 
 Dump the contents of the general pasteboard:
 ```
@@ -81,3 +91,4 @@ Dump the HTML contents of a pasteboard:
 
 You can even dump binary data (e.g., `xpb paste --format png`) if you want to. Probably you should
 pipe it to `base64`, though, to not screw up your terminal.
+
