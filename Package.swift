@@ -11,7 +11,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "extended_pasteboard",
+            name: "xpb",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser")
             ])
