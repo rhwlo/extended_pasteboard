@@ -17,9 +17,7 @@ Example uses follow:
 
 ### `xpb copy`: writing to a pasteboard
 
-Write from stdin, specifying the type of data (as with `pbcopy`):
-
-Write plain text to the 'general' pasteboard:
+Write plain text to the 'general' pasteboard from stdin:
 ```
 % echo 'hello, world!' | xpb copy
 ```
